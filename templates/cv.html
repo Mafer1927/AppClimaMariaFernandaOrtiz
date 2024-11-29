@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Currículum Vitae de María Ortiz, con experiencia en gestión administrativa.">
+    <title>Currículum Vitae - María Ortiz</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+        .cv-container {
+            display: flex;
+            max-width: 1000px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .left-column, .right-column {
+            padding: 20px;
+        }
+        .left-column {
+            width: 35%;
+            background-color: #e9e9e9;
+        }
+        .right-column {
+            width: 65%;
+        }
+        .profile-picture {
+            text-align: center;
+        }
+        .profile-picture img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        h1 {
+            font-size: 2em;
+            margin: 0;
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 1.2em;
+            color: #555;
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .left-column p, .right-column p, ul {
+            font-size: 0.9em;
+            color: #555;
+            line-height: 1.5;
+            margin: 8px 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 6px;
+        }
+
+        @media (max-width: 768px) {
+            .cv-container {
+                flex-direction: column;
+            }
+            .left-column, .right-column {
+                width: 100%;
+            }
+        }
+    </style>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">María Ortiz R</a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Perfil</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Experiencia</a>
+              </li>
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+<div class="cv-container">
+
+    
+    <div class="left-column">
+        
+        <div class="profile-picture">
+          <img src="https://scontent-lim1-1.xx.fbcdn.net/v/t39.30808-6/467641709_538317715702860_1798069119968913248_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=AMxg7h8BDJoQ7kNvgFx2y5P&_nc_zt=23&_nc_ht=scontent-lim1-1.xx&_nc_gid=AK1fmKwBZvv2nd6_NYDX9wc&oh=00_AYAPkTyg_MKvTKw7jF5-c5Oje41fwzPatF9K0kUmmc1Y1Q&oe=674F34FE" alt="Foto de perfil de María Ortiz">
+            <!-- <img src="maria.jpeg" alt="Foto de perfil de María Ortiz"> -->
+            <h1>María Ortiz</h1>
+            <p><strong>Dirección:</strong> Urb Castilla MZ 8 Villa 14</p>
+            <p><strong>Correo:</strong> mariafernanda@outlook.com</p>
+            <p><strong>Teléfono:</strong> (593) 987 7273</p>
+            <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=100085739079696" target="_blank">mariafernanda.ortiz</a></p>
+        </div>
+
+        <h2></h2>
+        
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+            Habilidades
+          </button>
+          
+          <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="staticBackdropLabel">Habilidades</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <ul>
+                    <li>Trabajo en equipo</li>
+                    <li>Adaptabilidad</li>
+                    <li>Pensamiento crítico</li>
+                    <li>Gestión del tiempo</li>
+                    <li>Conocimiento de herramientas ofimáticas</li>
+                    <li>Liderazgo</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+       
+
+        <h2>Idiomas</h2>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Español
+              <span class="badge text-bg-primary rounded-pill">100 %</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                Inglés
+              <span class="badge text-bg-primary rounded-pill">80 % </span>
+            </li>
+          </ul>
+    </div>
+
+    
+    <div class="right-column">
+        
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    Perfil Profesional
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                    <p>Me considero una persona responsable, dinámica, creativa y con capacidad de liderazgo. Busco una oportunidad de trabajo que me permita desarrollar mis habilidades y contribuir al éxito de la organización.</p>                 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Experiencia Laboral
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <div class="section-title">Asistente Administrativo - Importadora Herrera Maderas SA</div>
+                    <p><strong>2020 - 2022</strong></p>
+                    <ul>
+                        <li>Control de facturas electrónicas y físicas</li>
+                        <li>Registro de asistencias y novedades de trabajo</li>
+                        <li>Generación de cheques</li>
+                        <li>Atención al cliente</li>
+                    </ul>
+
+                    <div class="section-title">Asistente Tributario - Mite Contadores</div>
+                    <p><strong>2018 - 2020</strong></p>
+                    <ul>
+                        <li>Manejo de toda la página web de la Superintendencia de Compañías</li>
+                        <li>Declaraciones tributarias del SRI</li>
+                        <li>Facturación electrónica</li>
+                    </ul>
+                    
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Educación
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <p><strong>Universidad de Guayaquil</strong> - Gestión de la Información Gerencial - 4to Semestre (cursando)</p>
+                    <ul>
+                        <li>Curso en redes de datos (2023)</li>
+                        <li>Curso de gestión administrativa (2023)</li>
+                    </ul>                 
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    Contacto
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+
+                    <p><strong>Lic. Norma López</strong><br>
+                        Teléfono: 0924 9831</p>
+                     <p><strong>Ing. Elizabeth Vásquez</strong><br>
+                        Teléfono: 0932 3049 40</p>
+
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
+
+    </div>
+</div>
+</div>
+</body>
+</html>
+
+

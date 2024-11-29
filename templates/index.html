@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <link href="{{ url_for('static', filename='/cv.html') }}">
+
+    <!-- <link rel="stylesheet" href="./css/estilos.css">    -->
+    
+    <title>Weather APP - Maria Fernanda Ortiz </title>
+
+    <style>
+        body{
+            background-image: url('https://images.pexels.com/photos/12833880/pexels-photo-12833880.jpeg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .profile-picture img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        /* Clase para h1 */
+
+.modern-h1:hover {
+  transform: scale(1.05); /* Ampliación ligera al pasar el mouse */
+  color: #00796b; /* Cambio de color al pasar el mouse */
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+    <div class="container contenedor">
+        <br><br><br><br><br>  
+        <figure class="text-center animate__animated animate__slideInUp ">
+            <blockquote class="blockquote">
+            <h2>Aplicacion para la consulta del Clima </h2>
+            </blockquote>
+          </figure>    
+        
+        <form method="post">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" name="txtCiudad" id="txtCiudad"
+                placeholder="Como esta el clima en........ "
+            </div>
+            <center>
+                <button class="btn btn-outline-success" type="submit">
+                    <i class="bi bi-search-heart"></i>
+                    Consulta el Clima
+                    <i class="bi bi-search-heart"></i>
+                </button>
+            </center>
+        </form>
+        <br>
+    </div>
+
+        <!-- Carta del clima de la ciudad -->
+        {% if cod == 200 %}
+        <center>
+        <div class="card animate__animated animate__zoomInDown profile-picture" style="width: 18rem"; >
+            <img src="http://openweathermap.org/img/w/{{ icon }}.png" alt="icon">
+
+            <div class="card-body">
+
+                <h4 class="card-title">{{ ciudad }}</h4>
+                <ul>
+                    <li>Descripcion : {{descripcion}}</li>
+                    <li>Latitud : {{latitud}}</li>
+                    <li>Longitud : {{longitud}}</li>
+                    <li>Humedad : {{humedad}}</li>
+                    <li>Presion : {{presion}}</li>
+                </ul>
+                <br>
+            </div>
+        </div>
+        {% endif %}
+        {% if cod == '404' %}
+        <h1>Error</h1>
+        {% endif %}
+    </center>
+</body>
+<br>
+<br>
+<br>
+
+<footer class="card bg-info text-center text-lg-start fixed-bottom">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2024 Copyright: <a class="text-dark" href="{{ url_for('cv') }}">Maria Fernanda Ortiz Ruiz</a>
+    </div>
+</footer>
+
+</html>
